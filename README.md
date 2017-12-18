@@ -6,7 +6,7 @@ Instagram Kit is an Android library designed to make interacting with Instagram 
 - Log in with Instagram
 
 ## Getting started
-- visit [Instagram Developer Dashboard] (https://www.instagram.com/developer/)
+- visit [Instagram Developer Dashboard](https://www.instagram.com/developer/)
 - generate client to access **Client ID**
 - under *security* tab, enter *valid redirect uri*, it **has to start with http:// and end with .domainname**
   - for example it can be `http://dummyredirecturi.my`
