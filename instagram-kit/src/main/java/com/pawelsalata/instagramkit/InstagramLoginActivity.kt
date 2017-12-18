@@ -92,26 +92,5 @@ internal class InstagramLoginActivity : Activity() {
             }
             return false
         }
-
-        override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
-            Log.d(TAG, "Loading URL " + url)
-            super.onPageStarted(view, url, favicon)
-        }
-
-        override fun onPageFinished(view: WebView?, url: String?) {
-            Log.d(TAG, "Finished URL " + url)
-            super.onPageFinished(view, url)
-        }
-
-        @RequiresApi(Build.VERSION_CODES.M)
-        override fun onReceivedError(view: WebView?, request: WebResourceRequest?, error: WebResourceError?) {
-            finishWithError(error?.description.toString())
-            super.onReceivedError(view, request, error)
-        }
-
-        override fun onReceivedHttpError(view: WebView?, request: WebResourceRequest?, errorResponse: WebResourceResponse?) {
-//            finishWithError(errorResponse?.reasonPhrase)
-            super.onReceivedHttpError(view, request, errorResponse)
-        }
     }
 }

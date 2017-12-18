@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity(), MainListener {
     }
 
     override fun onInstagramClicked(v: View) {
-        
         InstagramManager.authorize(
                 this,
                 AuthData(getString(R.string.instagram_app_id), getString(R.string.redirect_uri)),
